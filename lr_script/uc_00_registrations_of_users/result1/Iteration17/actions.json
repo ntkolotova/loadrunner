@@ -1,0 +1,129 @@
+[
+    {
+        "actionName": "uc_00_registration_of_users",
+        "steps": [
+            {
+                "stepId": "STEP209",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1734446361825
+            },
+            {
+                "stepId": "STEP210",
+                "stepName": "Url: header.html",
+                "infFile": "t2.inf",
+                "time": 1734446361848
+            },
+            {
+                "stepId": "STEP211",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t3.inf",
+                "time": 1734446361915
+            },
+            {
+                "stepId": "STEP212",
+                "stepName": "Url: nav.pl",
+                "infFile": "t4.inf",
+                "time": 1734446361973
+            },
+            {
+                "stepId": "STEP213",
+                "stepName": "Url: home.html",
+                "infFile": "t5.inf",
+                "time": 1734446361998
+            },
+            {
+                "stepId": "STEP214",
+                "stepName": "Url: login.pl",
+                "infFile": "t6.inf",
+                "time": 1734446362056
+            },
+            {
+                "stepId": "STEP215",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t7.inf",
+                "time": 1734446362138
+            },
+            {
+                "stepId": "STEP216",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t8.inf",
+                "time": 1734446362276
+            },
+            {
+                "stepId": "STEP217",
+                "stepName": "Url: nav.pl",
+                "infFile": "t9.inf",
+                "time": 1734446362324
+            },
+            {
+                "stepId": "STEP218",
+                "stepName": "Url: login.pl",
+                "infFile": "t10.inf",
+                "time": 1734446362402
+            },
+            {
+                "stepId": "STEP219",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t11.inf",
+                "time": 1734446362509
+            },
+            {
+                "stepId": "STEP220",
+                "stepName": "Url: nav.pl",
+                "infFile": "t12.inf",
+                "time": 1734446362559
+            },
+            {
+                "stepId": "STEP221",
+                "stepName": "Url: home.html",
+                "infFile": "t13.inf",
+                "time": 1734446362586
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "open_start_page",
+                "rawStartTime": 1734446361745,
+                "rawEndTime": 1734446361998,
+                "thinkTime": 0.0,
+                "wastedTime": 0.10411620140075684
+            },
+            {
+                "transactionName": "customer_profile",
+                "rawStartTime": 1734446361999,
+                "rawEndTime": 1734446362057,
+                "thinkTime": 0.0,
+                "wastedTime": 0.021790742874145509
+            },
+            {
+                "transactionName": "confirmation",
+                "rawStartTime": 1734446362057,
+                "rawEndTime": 1734446362138,
+                "thinkTime": 0.0,
+                "wastedTime": 0.021595478057861329
+            },
+            {
+                "transactionName": "greetings",
+                "rawStartTime": 1734446362138,
+                "rawEndTime": 1734446362402,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07089591026306153
+            },
+            {
+                "transactionName": "logout",
+                "rawStartTime": 1734446362402,
+                "rawEndTime": 1734446362586,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06663322448730469
+            },
+            {
+                "transactionName": "uc_00_registration_of_users",
+                "rawStartTime": 1734446361745,
+                "rawEndTime": 1734446362586,
+                "thinkTime": 0.0,
+                "wastedTime": 0.2850315570831299
+            }
+        ]
+    }
+]

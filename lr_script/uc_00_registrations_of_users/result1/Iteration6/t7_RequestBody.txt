@@ -1,2 +1,2 @@
-"username=WinklePro&password=DrLeslie456&passwordConfirm=DrLeslie456&firstName=Leslie&lastName="
-"Winkle&address1=303CedarWay&address2=Seattle&register.x=61&register.y=9"
+"username=DanWaves&password=Bright543&passwordConfirm=Bright543&firstName=Daniel&lastName=Wilso"
+"n&address1=303Birch&address2=Philadelphia&register.x=61&register.y=9"

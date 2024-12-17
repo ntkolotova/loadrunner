@@ -1,9 +1,16 @@
 GET /cgi-bin/nav.pl?in=home HTTP/1.1
 Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=true
+Upgrade-Insecure-Requests: 1
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
 User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
 Accept-Encoding: gzip, deflate
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1733745911
+Cookie: MSO=SID&1734449753
 

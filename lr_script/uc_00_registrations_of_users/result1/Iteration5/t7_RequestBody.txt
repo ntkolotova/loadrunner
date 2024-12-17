@@ -1,2 +1,2 @@
-"username=Berni&password=Bernie321&passwordConfirm=Bernie321&firstName=Bernadette&lastName=Rost"
-"enkowski&address1=202BirchBoulevard&address2=Miami&register.x=61&register.y=9"
+"username=MiaMagic&password=Chill987&passwordConfirm=Chill987&firstName=Mia&lastName=Miller&add"
+"ress1=202Maple&address2=Phoenix&register.x=61&register.y=9"

@@ -8,11 +8,11 @@ FileName11=t1_1_webtours.png
 FileName10=t1_2_mer_login.gif
 FileName12=t1_0_hp_logo.png
 RequestHeaderFile=t10_RequestHeader.txt
-RawStepStartTime=1733745323301
+RawStepStartTime=1734449884602
 ContentType=text/html
 RawStepName=nav.pl
 ResponseHeaderFile=t10_ResponseHeader.txt
-RawStepEndTime=1733745323325
+RawStepEndTime=1734449884627
 SnapshotXmlFile=snapshot_10.xml
 Total=12
 URL1=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary

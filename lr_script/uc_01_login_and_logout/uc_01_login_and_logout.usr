@@ -52,7 +52,7 @@ vuser_init=cci
 uc_01_login_logout=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="logout__*delimiter*__do_login__*delimiter*__open_start_page__*delimiter*__uc_01_login_logout"
+Order="uc_01_login_logout__*delimiter*__open_start_page__*delimiter*__do_login__*delimiter*__logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -65,7 +65,7 @@ NumIterationsUntilCompletion=1
 IterationFromRTS=0
 NumIterationIndefinitely=1
 [Transactions]
-logout=
-do_login=
-open_start_page=
 uc_01_login_logout=
+open_start_page=
+do_login=
+logout=

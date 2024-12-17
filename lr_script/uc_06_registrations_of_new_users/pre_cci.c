@@ -1,4 +1,4 @@
-# 1 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c"
+# 1 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
+# 1 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
+# 2 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
 
 # 1 "globals.h" 1
 
@@ -2589,19 +2589,19 @@ void
  
 
 
-# 3 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
+# 3 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
+# 4 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
 
 # 1 "uc_06_registration_of_new_users.c" 1
 
 
-char random_string[14];
+char random_string[10 + 1];
 
 uc_06_registration_of_new_users()
 {
@@ -2609,29 +2609,29 @@ uc_06_registration_of_new_users()
 	
 	lr_start_transaction("open_start_page");
 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_header("Sec-Fetch-Dest", 
+		"document");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"none");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2655,14 +2655,14 @@ uc_06_registration_of_new_users()
 		"Mode=HTML", 
 		"LAST");
 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2678,7 +2678,6 @@ uc_06_registration_of_new_users()
 		"Mode=HTML", 
 		"LAST");
 	
-
 	web_reg_save_param_ex(
 		"ParamName=USERSESSION",
 		"LB=name=\"userSession\" value=\"",
@@ -2702,11 +2701,11 @@ uc_06_registration_of_new_users()
 		"Mode=HTML", 
 		"LAST");
 
- 
- 
- 
- 
- 
+	(web_remove_auto_header("Sec-Fetch-Dest", "ImplicitGen=Yes", "LAST"));
+
+	(web_remove_auto_header("Sec-Fetch-Mode", "ImplicitGen=Yes", "LAST"));
+
+	(web_remove_auto_header("Sec-Fetch-Site", "ImplicitGen=Yes", "LAST"));
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2724,33 +2723,33 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("open_start_page", 2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("customer_profile");
 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2768,9 +2767,7 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("customer_profile", 2);
 	
-	lr_think_time(15);
-	
-	
+	lr_think_time(5);
 	
 	lr_start_transaction("confirmation");
     
@@ -2778,32 +2775,37 @@ uc_06_registration_of_new_users()
     
     lr_save_string(random_string, "randomPARAMETERS");
 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_header("Origin", 
+		"http://{HOST}:{PORT}");
+
+	web_add_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_header("sec-ch-ua-platform", 
+		"\"Windows\"");
+    
+     web_reg_find("Fail=NotFound",
+		"Search=Body",
+		"Text=Thank you, <b>{randomPARAMETERS}</b>, for registering and welcome to the Web Tours family.",
+		"LAST");
 	
 	web_submit_data("login.pl", 
 		"Action=http://{HOST}:{PORT}/cgi-bin/login.pl", 
@@ -2826,33 +2828,33 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("confirmation", 2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("greetings");
 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2898,33 +2900,33 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("greetings", 2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("logout");
 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2954,11 +2956,11 @@ uc_06_registration_of_new_users()
 		"Mode=HTML", 
 		"LAST");
 
- 
- 
- 
- 
- 
+	(web_remove_auto_header("Sec-Fetch-Dest", "ImplicitGen=Yes", "LAST"));
+
+	(web_remove_auto_header("Sec-Fetch-Mode", "ImplicitGen=Yes", "LAST"));
+
+	(web_remove_auto_header("Sec-Fetch-Site", "ImplicitGen=Yes", "LAST"));
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2976,38 +2978,31 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("logout", 2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_end_transaction("uc_06_registration_of_new_users", 2);
 
 	return 0;
 }
 
-
-
-
-
-
-
-
-
 void generate_random_string(char *random_string) {
+	
     const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     int i;
     
-    srand(_time32(0));
-
-    for (i = 0; i < 14; i++) {
-        int key = rand() % (int)(sizeof(charset) - 1);
+    for (i = 0; i < 10; i++) {
+        int key = rand() % (sizeof(charset) - 1);
         random_string[i] = charset[key];
     }
+    
+   random_string[10] = '\0';
 }
-# 5 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
+# 5 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
+# 6 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_06_registrations_of_new_users\\\\combined_uc_06_registrations_of_new_users.c" 2
 

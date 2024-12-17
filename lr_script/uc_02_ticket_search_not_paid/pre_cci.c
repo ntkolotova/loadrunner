@@ -1,4 +1,4 @@
-# 1 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c"
+# 1 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
+# 1 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
+# 2 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
 
 # 1 "globals.h" 1
 
@@ -2589,14 +2589,14 @@ void
  
 
 
-# 3 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
+# 3 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
+# 4 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
 
 # 1 "uc_02_ticket_search_not_paid.c" 1
 uc_02_ticket_search_not_paid()
@@ -2719,7 +2719,7 @@ uc_02_ticket_search_not_paid()
 	
 	lr_end_transaction("open_start_page", 2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("do_login");
 	
@@ -2806,7 +2806,7 @@ uc_02_ticket_search_not_paid()
 	
 	lr_end_transaction("do_login", 2);
 	
-	lr_think_time(10);
+	lr_think_time(2);
 	
 	lr_start_transaction("open_flights");
 	
@@ -2899,7 +2899,7 @@ uc_02_ticket_search_not_paid()
 	
 	lr_end_transaction("open_flights", 2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("find_flights");
 	
@@ -2974,7 +2974,7 @@ uc_02_ticket_search_not_paid()
 	
 	lr_end_transaction("find_flights", 2);
 	
-	lr_think_time(15);
+	lr_think_time(5);
 	
 	lr_start_transaction("logout");
 	
@@ -3035,7 +3035,7 @@ uc_02_ticket_search_not_paid()
  
  
  
-	
+ 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
 		"Text=Web Tours",
@@ -3056,12 +3056,12 @@ uc_02_ticket_search_not_paid()
 
 	return 0;
 }
-# 5 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
+# 5 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
+# 6 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_02_ticket_search_not_paid\\\\combined_uc_02_ticket_search_not_paid.c" 2
 

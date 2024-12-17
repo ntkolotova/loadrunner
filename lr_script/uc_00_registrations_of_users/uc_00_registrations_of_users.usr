@@ -59,9 +59,9 @@ LastReplayStatus=1
 LastReplayedRunName=result1
 ActiveRunName=result1
 [ParameterSimulation]
-NumVusers=1
+NumVusers=5
 IsDurationIndefinite=0
-NumIterationsUntilCompletion=15
+NumIterationsUntilCompletion=5
 IterationFromRTS=0
 NumIterationIndefinitely=1
 [Transactions]

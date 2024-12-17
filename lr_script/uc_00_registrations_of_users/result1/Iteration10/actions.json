@@ -6,123 +6,123 @@
                 "stepId": "STEP118",
                 "stepName": "Url: WebTours",
                 "infFile": "t1.inf",
-                "time": 1733743779407
+                "time": 1734446356034
             },
             {
                 "stepId": "STEP119",
                 "stepName": "Url: header.html",
                 "infFile": "t2.inf",
-                "time": 1733743779422
+                "time": 1734446356048
             },
             {
                 "stepId": "STEP120",
                 "stepName": "Url: welcome.pl",
                 "infFile": "t3.inf",
-                "time": 1733743779504
+                "time": 1734446356140
             },
             {
                 "stepId": "STEP121",
                 "stepName": "Url: nav.pl",
                 "infFile": "t4.inf",
-                "time": 1733743779559
+                "time": 1734446356196
             },
             {
                 "stepId": "STEP122",
                 "stepName": "Url: home.html",
                 "infFile": "t5.inf",
-                "time": 1733743779584
+                "time": 1734446356213
             },
             {
                 "stepId": "STEP123",
                 "stepName": "Url: login.pl",
                 "infFile": "t6.inf",
-                "time": 1733743779654
+                "time": 1734446356294
             },
             {
                 "stepId": "STEP124",
                 "stepName": "Submit Data: login.pl",
                 "infFile": "t7.inf",
-                "time": 1733743779728
+                "time": 1734446356356
             },
             {
                 "stepId": "STEP125",
                 "stepName": "Url: welcome.pl",
                 "infFile": "t8.inf",
-                "time": 1733743779859
+                "time": 1734446356499
             },
             {
                 "stepId": "STEP126",
                 "stepName": "Url: nav.pl",
                 "infFile": "t9.inf",
-                "time": 1733743779895
+                "time": 1734446356536
             },
             {
                 "stepId": "STEP127",
                 "stepName": "Url: login.pl",
                 "infFile": "t10.inf",
-                "time": 1733743779969
+                "time": 1734446356610
             },
             {
                 "stepId": "STEP128",
                 "stepName": "Url: welcome.pl",
                 "infFile": "t11.inf",
-                "time": 1733743780071
+                "time": 1734446356719
             },
             {
                 "stepId": "STEP129",
                 "stepName": "Url: nav.pl",
                 "infFile": "t12.inf",
-                "time": 1733743780135
+                "time": 1734446356774
             },
             {
                 "stepId": "STEP130",
                 "stepName": "Url: home.html",
                 "infFile": "t13.inf",
-                "time": 1733743780161
+                "time": 1734446356801
             }
         ],
         "transactions": [
             {
                 "transactionName": "open_start_page",
-                "rawStartTime": 1733743779346,
-                "rawEndTime": 1733743779584,
+                "rawStartTime": 1734446355970,
+                "rawEndTime": 1734446356213,
                 "thinkTime": 0.0,
-                "wastedTime": 0.07152175903320313
+                "wastedTime": 0.06186532974243164
             },
             {
                 "transactionName": "customer_profile",
-                "rawStartTime": 1733743779585,
-                "rawEndTime": 1733743779655,
+                "rawStartTime": 1734446356214,
+                "rawEndTime": 1734446356294,
                 "thinkTime": 0.0,
-                "wastedTime": 0.020827770233154298
+                "wastedTime": 0.020496606826782228
             },
             {
                 "transactionName": "confirmation",
-                "rawStartTime": 1733743779655,
-                "rawEndTime": 1733743779729,
+                "rawStartTime": 1734446356294,
+                "rawEndTime": 1734446356356,
                 "thinkTime": 0.0,
-                "wastedTime": 0.021600961685180665
+                "wastedTime": 0.011656045913696289
             },
             {
                 "transactionName": "greetings",
-                "rawStartTime": 1733743779729,
-                "rawEndTime": 1733743779969,
+                "rawStartTime": 1734446356357,
+                "rawEndTime": 1734446356610,
                 "thinkTime": 0.0,
-                "wastedTime": 0.039371490478515628
+                "wastedTime": 0.038312435150146487
             },
             {
                 "transactionName": "logout",
-                "rawStartTime": 1733743779969,
-                "rawEndTime": 1733743780161,
+                "rawStartTime": 1734446356610,
+                "rawEndTime": 1734446356801,
                 "thinkTime": 0.0,
-                "wastedTime": 0.058396100997924808
+                "wastedTime": 0.05598115921020508
             },
             {
                 "transactionName": "uc_00_registration_of_users",
-                "rawStartTime": 1733743779346,
-                "rawEndTime": 1733743780162,
+                "rawStartTime": 1734446355970,
+                "rawEndTime": 1734446356801,
                 "thinkTime": 0.0,
-                "wastedTime": 0.21171808242797852
+                "wastedTime": 0.18831157684326173
             }
         ]
     }

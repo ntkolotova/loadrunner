@@ -4,29 +4,29 @@ uc_03_buy_tickets()
 	
 	lr_start_transaction("open_start_page");
 	
-//	web_add_header("Sec-Fetch-Dest", 
-//		"document");
-//
-//	web_add_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_header("Sec-Fetch-Site", 
-//		"none");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_auto_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_auto_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_auto_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_auto_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_header("Sec-Fetch-Dest", 
+		"document");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"none");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -50,14 +50,14 @@ uc_03_buy_tickets()
 		"Mode=HTML", 
 		LAST);
 
-//	web_add_auto_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_auto_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_auto_header("Sec-Fetch-Site", 
-//		"same-origin");
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -96,11 +96,11 @@ uc_03_buy_tickets()
 		"Mode=HTML", 
 		LAST);
 
-//	web_revert_auto_header("Sec-Fetch-Dest");
-//
-//	web_revert_auto_header("Sec-Fetch-Mode");
-//
-//	web_revert_auto_header("Sec-Fetch-Site");
+	web_revert_auto_header("Sec-Fetch-Dest");
+
+	web_revert_auto_header("Sec-Fetch-Mode");
+
+	web_revert_auto_header("Sec-Fetch-Site");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -118,36 +118,36 @@ uc_03_buy_tickets()
 	
 	lr_end_transaction("open_start_page", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("do_login");
 	
-//	web_add_header("Origin", 
-//		"http://{HOST}:{PORT}");
-//
-//	web_add_auto_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_auto_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_auto_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_auto_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_auto_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_auto_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_auto_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_header("Origin", 
+		"http://{HOST}:{PORT}");
+
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -205,33 +205,33 @@ uc_03_buy_tickets()
 	
 	lr_end_transaction("do_login", LR_AUTO);
 	
-	lr_think_time(10);
+	lr_think_time(2);
 	
 	lr_start_transaction("open_flights");
 	
-//	web_add_auto_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_auto_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_auto_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_auto_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_auto_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_auto_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_auto_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -298,36 +298,36 @@ uc_03_buy_tickets()
 	
 	lr_end_transaction("open_flights", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("find_flights");
 	
-//	web_add_header("Origin", 
-//		"http://{HOST}:{PORT}");
-//
-//	web_add_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_header("Origin", 
+		"http://{HOST}:{PORT}");
+
+	web_add_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_save_param_ex(
 		"ParamName=OUTBOUNDFLIGHT",
@@ -386,36 +386,36 @@ uc_03_buy_tickets()
 	
 	lr_end_transaction("find_flights", LR_AUTO);
 	
-	lr_think_time(15);
+	lr_think_time(5);
 	
 	lr_start_transaction("choose_flights");
 	
-//	web_add_header("Origin", 
-//		"http://{HOST}:{PORT}");
-//
-//	web_add_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_header("Origin", 
+		"http://{HOST}:{PORT}");
+
+	web_add_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 
 	web_reg_find("Fail=NotFound",
@@ -443,36 +443,36 @@ uc_03_buy_tickets()
 	
 	lr_end_transaction("choose_flights", LR_AUTO);
 	
-	lr_think_time(10);
+	lr_think_time(2);
 	
 	lr_start_transaction("buy_flights");
 	
-//	web_add_header("Origin", 
-//		"http://{HOST}:{PORT}");
-//
-//	web_add_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_header("Origin", 
+		"http://{HOST}:{PORT}");
+
+	web_add_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -510,33 +510,33 @@ uc_03_buy_tickets()
 	
 	lr_end_transaction("buy_flights", LR_AUTO);
 	
-	lr_think_time(15);
+	lr_think_time(5);
 	
 	lr_start_transaction("logout");
 	
-//	web_add_auto_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_auto_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_auto_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_auto_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_auto_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_auto_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_auto_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -566,11 +566,11 @@ uc_03_buy_tickets()
 		"Mode=HTML", 
 		LAST);
 
-//	web_revert_auto_header("Sec-Fetch-Dest");
-//
-//	web_revert_auto_header("Sec-Fetch-Mode");
-//
-//	web_revert_auto_header("Sec-Fetch-Site");
+	web_revert_auto_header("Sec-Fetch-Dest");
+
+	web_revert_auto_header("Sec-Fetch-Mode");
+
+	web_revert_auto_header("Sec-Fetch-Site");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -588,7 +588,7 @@ uc_03_buy_tickets()
 	
 	lr_end_transaction("logout", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_end_transaction("uc_03_buy_tickets", LR_AUTO);
 

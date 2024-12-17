@@ -6,11 +6,11 @@ SaveSnapshotResources=1
 FileName11=t1_0_hp_logo.png
 FileName10=t1_1_webtours.png
 RequestHeaderFile=t14_RequestHeader.txt
-RawStepStartTime=1733744176339
+RawStepStartTime=1734449642415
 ContentType=text/html
 RawStepName=nav.pl
 ResponseHeaderFile=t14_ResponseHeader.txt
-RawStepEndTime=1733744176380
+RawStepEndTime=1734449642460
 SnapshotXmlFile=snapshot_14.xml
 Total=11
 URL1=http://localhost:1080/cgi-bin/nav.pl?in=home

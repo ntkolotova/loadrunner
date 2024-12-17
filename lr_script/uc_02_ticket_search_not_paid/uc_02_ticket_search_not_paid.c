@@ -118,7 +118,7 @@ uc_02_ticket_search_not_paid()
 	
 	lr_end_transaction("open_start_page", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("do_login");
 	
@@ -205,7 +205,7 @@ uc_02_ticket_search_not_paid()
 	
 	lr_end_transaction("do_login", LR_AUTO);
 	
-	lr_think_time(10);
+	lr_think_time(2);
 	
 	lr_start_transaction("open_flights");
 	
@@ -298,7 +298,7 @@ uc_02_ticket_search_not_paid()
 	
 	lr_end_transaction("open_flights", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("find_flights");
 	
@@ -373,7 +373,7 @@ uc_02_ticket_search_not_paid()
 	
 	lr_end_transaction("find_flights", LR_AUTO);
 	
-	lr_think_time(15);
+	lr_think_time(5);
 	
 	lr_start_transaction("logout");
 	
@@ -434,7 +434,7 @@ uc_02_ticket_search_not_paid()
 //	web_revert_auto_header("Sec-Fetch-Mode");
 //
 //	web_revert_auto_header("Sec-Fetch-Site");
-	
+//	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
 		"Text=Web Tours",

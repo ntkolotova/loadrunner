@@ -1,9 +1,17 @@
 GET /cgi-bin/welcome.pl?signOff=1 HTTP/1.1
 Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary
+Sec-Fetch-User: ?1
+Upgrade-Insecure-Requests: 1
+sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Dest: frame
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
 User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
 Accept-Encoding: gzip, deflate
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1733743772; MTUserInfo=firstName&Sheldon&address2&Richmond&username&Shelli&hash&105&lastName&Cooper&address1&123MapleStreet&creditCard&&expDate&
+Cookie: MSO=SID&1734446348; MTUserInfo=firstName&Olivia&address2&NewYork&username&LivySparks&hash&19&lastName&Smith&address1&123Main&creditCard&&expDate&
 

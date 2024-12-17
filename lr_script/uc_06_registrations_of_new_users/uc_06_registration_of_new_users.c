@@ -1,6 +1,6 @@
-#define STRING_LENGTH 14
+#define STRING_LENGTH 10
 
-char random_string[STRING_LENGTH];
+char random_string[STRING_LENGTH + 1];
 
 uc_06_registration_of_new_users()
 {
@@ -8,29 +8,29 @@ uc_06_registration_of_new_users()
 	
 	lr_start_transaction("open_start_page");
 	
-//	web_add_header("Sec-Fetch-Dest", 
-//		"document");
-//
-//	web_add_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_header("Sec-Fetch-Site", 
-//		"none");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_auto_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_auto_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_auto_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_auto_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_header("Sec-Fetch-Dest", 
+		"document");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"none");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -54,14 +54,14 @@ uc_06_registration_of_new_users()
 		"Mode=HTML", 
 		LAST);
 
-//	web_add_auto_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_auto_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_auto_header("Sec-Fetch-Site", 
-//		"same-origin");
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -100,11 +100,11 @@ uc_06_registration_of_new_users()
 		"Mode=HTML", 
 		LAST);
 
-//	web_revert_auto_header("Sec-Fetch-Dest");
-//
-//	web_revert_auto_header("Sec-Fetch-Mode");
-//
-//	web_revert_auto_header("Sec-Fetch-Site");
+	web_revert_auto_header("Sec-Fetch-Dest");
+
+	web_revert_auto_header("Sec-Fetch-Mode");
+
+	web_revert_auto_header("Sec-Fetch-Site");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -122,33 +122,33 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("open_start_page", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("customer_profile");
 	
-//	web_add_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -166,7 +166,7 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("customer_profile", LR_AUTO);
 	
-	lr_think_time(15);
+	lr_think_time(5);
 	
 	lr_start_transaction("confirmation");
     
@@ -174,32 +174,37 @@ uc_06_registration_of_new_users()
     
     lr_save_string(random_string, "randomPARAMETERS");
 	
-//	web_add_header("Origin", 
-//		"http://{HOST}:{PORT}");
-//
-//	web_add_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_header("Origin", 
+		"http://{HOST}:{PORT}");
+
+	web_add_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_header("sec-ch-ua-platform", 
+		"\"Windows\"");
+    
+     web_reg_find("Fail=NotFound",
+		"Search=Body",
+		"Text=Thank you, <b>{randomPARAMETERS}</b>, for registering and welcome to the Web Tours family.",
+		LAST);
 	
 	web_submit_data("login.pl", 
 		"Action=http://{HOST}:{PORT}/cgi-bin/login.pl", 
@@ -222,33 +227,33 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("confirmation", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("greetings");
 	
-//	web_add_auto_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_auto_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_auto_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_auto_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_auto_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_auto_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_auto_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -294,33 +299,33 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("greetings", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("logout");
 	
-//	web_add_auto_header("Sec-Fetch-Dest", 
-//		"frame");
-//
-//	web_add_auto_header("Sec-Fetch-Mode", 
-//		"navigate");
-//
-//	web_add_auto_header("Sec-Fetch-Site", 
-//		"same-origin");
-//
-//	web_add_header("Sec-Fetch-User", 
-//		"?1");
-//
-//	web_add_auto_header("Upgrade-Insecure-Requests", 
-//		"1");
-//
-//	web_add_auto_header("sec-ch-ua", 
-//		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
-//
-//	web_add_auto_header("sec-ch-ua-mobile", 
-//		"?0");
-//
-//	web_add_auto_header("sec-ch-ua-platform", 
-//		"\"Windows\"");
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -350,11 +355,11 @@ uc_06_registration_of_new_users()
 		"Mode=HTML", 
 		LAST);
 
-//	web_revert_auto_header("Sec-Fetch-Dest");
-//
-//	web_revert_auto_header("Sec-Fetch-Mode");
-//
-//	web_revert_auto_header("Sec-Fetch-Site");
+	web_revert_auto_header("Sec-Fetch-Dest");
+
+	web_revert_auto_header("Sec-Fetch-Mode");
+
+	web_revert_auto_header("Sec-Fetch-Site");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -372,29 +377,22 @@ uc_06_registration_of_new_users()
 	
 	lr_end_transaction("logout", LR_AUTO);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_end_transaction("uc_06_registration_of_new_users", LR_AUTO);
 
 	return 0;
 }
 
-
-
-
-
-
-
-
-
 void generate_random_string(char *random_string) {
+	
     const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     int i;
     
-    srand(time(NULL));
-
     for (i = 0; i < STRING_LENGTH; i++) {
-        int key = rand() % (int)(sizeof(charset) - 1);
+        int key = rand() % (sizeof(charset) - 1);
         random_string[i] = charset[key];
     }
+    
+   random_string[STRING_LENGTH] = '\0';
 }

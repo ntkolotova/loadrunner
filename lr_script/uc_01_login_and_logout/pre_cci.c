@@ -1,4 +1,4 @@
-# 1 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c"
+# 1 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
+# 1 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
+# 2 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
 
 # 1 "globals.h" 1
 
@@ -2589,14 +2589,14 @@ void
  
 
 
-# 3 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
+# 3 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
+# 4 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
 
 # 1 "uc_01_login_logout.c" 1
 uc_01_login_logout()
@@ -2605,29 +2605,29 @@ uc_01_login_logout()
 	
 	lr_start_transaction("open_start_page");
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_header("Sec-Fetch-Dest", 
+		"document");
+
+	web_add_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_header("Sec-Fetch-Site", 
+		"none");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2651,14 +2651,14 @@ uc_01_login_logout()
 		"Mode=HTML", 
 		"LAST");
 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2697,11 +2697,11 @@ uc_01_login_logout()
 		"Mode=HTML", 
 		"LAST");
 
- 
- 
- 
- 
- 
+	(web_remove_auto_header("Sec-Fetch-Dest", "ImplicitGen=Yes", "LAST"));
+
+	(web_remove_auto_header("Sec-Fetch-Mode", "ImplicitGen=Yes", "LAST"));
+
+	(web_remove_auto_header("Sec-Fetch-Site", "ImplicitGen=Yes", "LAST"));
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2719,36 +2719,36 @@ uc_01_login_logout()
 	
 	lr_end_transaction("open_start_page", 2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_start_transaction("do_login");
 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_header("Origin", 
+		"http://{HOST}:{PORT}");
+
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2806,33 +2806,33 @@ uc_01_login_logout()
 	
 	lr_end_transaction("do_login", 2);
 	
-	lr_think_time(10);
+	lr_think_time(2);
 	
 	lr_start_transaction("logout");
 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_add_auto_header("Sec-Fetch-Dest", 
+		"frame");
+
+	web_add_auto_header("Sec-Fetch-Mode", 
+		"navigate");
+
+	web_add_auto_header("Sec-Fetch-Site", 
+		"same-origin");
+
+	web_add_header("Sec-Fetch-User", 
+		"?1");
+
+	web_add_auto_header("Upgrade-Insecure-Requests", 
+		"1");
+
+	web_add_auto_header("sec-ch-ua", 
+		"\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"");
+
+	web_add_auto_header("sec-ch-ua-mobile", 
+		"?0");
+
+	web_add_auto_header("sec-ch-ua-platform", 
+		"\"Windows\"");
 
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2862,11 +2862,11 @@ uc_01_login_logout()
 		"Mode=HTML", 
 		"LAST");
 
- 
- 
- 
- 
- 
+	(web_remove_auto_header("Sec-Fetch-Dest", "ImplicitGen=Yes", "LAST"));
+
+	(web_remove_auto_header("Sec-Fetch-Mode", "ImplicitGen=Yes", "LAST"));
+
+	(web_remove_auto_header("Sec-Fetch-Site", "ImplicitGen=Yes", "LAST"));
 	
 	web_reg_find("Fail=NotFound",
 		"Search=Body",
@@ -2884,18 +2884,18 @@ uc_01_login_logout()
 	
 	lr_end_transaction("logout", 2);
 	
-	lr_think_time(5);
+	lr_think_time(2);
 	
 	lr_end_transaction("uc_01_login_logout", 2);
 	
 	return 0;
 }
-# 5 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
+# 5 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\nt_school\\git\\nt_school\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
+# 6 "c:\\nt_school\\git\\loadrunner\\lr_script\\uc_01_login_and_logout\\\\combined_uc_01_login_and_logout.c" 2
 
