@@ -1,0 +1,155 @@
+[
+    {
+        "actionName": "uc_01_registration_new_users_choose_flights",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1734874695757
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: header.html",
+                "infFile": "t2.inf",
+                "time": 1734874695762
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t3.inf",
+                "time": 1734874695832
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: nav.pl",
+                "infFile": "t4.inf",
+                "time": 1734874695889
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: home.html",
+                "infFile": "t5.inf",
+                "time": 1734874695897
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: login.pl",
+                "infFile": "t6.inf",
+                "time": 1734874697959
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t7.inf",
+                "time": 1734874703027
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t8.inf",
+                "time": 1734874705163
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: nav.pl",
+                "infFile": "t9.inf",
+                "time": 1734874705191
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: login.pl",
+                "infFile": "t10.inf",
+                "time": 1734874705284
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t11.inf",
+                "time": 1734874707396
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: nav.pl",
+                "infFile": "t12.inf",
+                "time": 1734874707423
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: reservations.pl",
+                "infFile": "t13.inf",
+                "time": 1734874707528
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t14.inf",
+                "time": 1734874709600
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Submit Data: reservations.pl",
+                "infFile": "t15.inf",
+                "time": 1734874714666
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "open_start_page",
+                "rawStartTime": 1734874695644,
+                "rawEndTime": 1734874695897,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06360840797424317
+            },
+            {
+                "transactionName": "customer_profile",
+                "rawStartTime": 1734874697896,
+                "rawEndTime": 1734874697959,
+                "thinkTime": 0.0,
+                "wastedTime": 0.003190279006958008
+            },
+            {
+                "transactionName": "confirmation",
+                "rawStartTime": 1734874702974,
+                "rawEndTime": 1734874703028,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0032143592834472658
+            },
+            {
+                "transactionName": "greetings",
+                "rawStartTime": 1734874705026,
+                "rawEndTime": 1734874705285,
+                "thinkTime": 0.0,
+                "wastedTime": 0.011214017868041993
+            },
+            {
+                "transactionName": "open_flights",
+                "rawStartTime": 1734874707292,
+                "rawEndTime": 1734874707529,
+                "thinkTime": 0.0,
+                "wastedTime": 0.010327577590942383
+            },
+            {
+                "transactionName": "find_flights",
+                "rawStartTime": 1734874709542,
+                "rawEndTime": 1734874709600,
+                "thinkTime": 0.0,
+                "wastedTime": 0.003603219985961914
+            },
+            {
+                "transactionName": "choose_flights",
+                "rawStartTime": 1734874714604,
+                "rawEndTime": 1734874714666,
+                "thinkTime": 0.0,
+                "wastedTime": 0.003075122833251953
+            },
+            {
+                "transactionName": "uc_01_registration_new_users_choose_flights",
+                "rawStartTime": 1734874695644,
+                "rawEndTime": 1734874716681,
+                "thinkTime": 20.041005,
+                "wastedTime": 0.09823298454284668
+            }
+        ]
+    }
+]

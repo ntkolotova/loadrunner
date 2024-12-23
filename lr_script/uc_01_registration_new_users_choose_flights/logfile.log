@@ -1,0 +1,1 @@
+c:\nt_school\git\loadrunner\lr_script\uc_01_registration_new_users_choose_flights\\pre_cci.c: uc_01_registration_new_users_choose_flights.c:547: warning: declaration of `generate_random_string' does not match previous declaration at uc_01_registration_new_users_choose_flights.c:173

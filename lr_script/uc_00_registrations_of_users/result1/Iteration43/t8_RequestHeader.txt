@@ -13,5 +13,5 @@ Accept-Encoding: gzip, deflate
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1734446390; MTUserInfo=firstName&Lucy&address2&Wichita&username&LucTwist&hash&20&lastName&Carter&address1&111Tr&creditCard&&expDate&
+Cookie: MSO=SID&1734946656; MTUserInfo=firstName&Lucy&address2&Wichita&username&LucTwist&hash&20&lastName&Carter&address1&111Tr&creditCard&&expDate&
 

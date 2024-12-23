@@ -1,0 +1,128 @@
+[
+    {
+        "actionName": "uc_04_goto_flights_and_itinerary",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1734875123788
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: header.html",
+                "infFile": "t2.inf",
+                "time": 1734875123793
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t3.inf",
+                "time": 1734875123855
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: nav.pl",
+                "infFile": "t4.inf",
+                "time": 1734875123914
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: home.html",
+                "infFile": "t5.inf",
+                "time": 1734875123921
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t6.inf",
+                "time": 1734875126023
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: nav.pl",
+                "infFile": "t7.inf",
+                "time": 1734875126049
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: login.pl_2",
+                "infFile": "t8.inf",
+                "time": 1734875126131
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t9.inf",
+                "time": 1734875128265
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: nav.pl",
+                "infFile": "t10.inf",
+                "time": 1734875128294
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: reservations.pl",
+                "infFile": "t11.inf",
+                "time": 1734875128390
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: welcome.pl",
+                "infFile": "t12.inf",
+                "time": 1734875130492
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: nav.pl",
+                "infFile": "t13.inf",
+                "time": 1734875130520
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: itinerary.pl",
+                "infFile": "t14.inf",
+                "time": 1734875130605
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "open_start_page",
+                "rawStartTime": 1734875123667,
+                "rawEndTime": 1734875123922,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06372499465942383
+            },
+            {
+                "transactionName": "do_login",
+                "rawStartTime": 1734875125923,
+                "rawEndTime": 1734875126131,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009927988052368164
+            },
+            {
+                "transactionName": "open_flights",
+                "rawStartTime": 1734875128126,
+                "rawEndTime": 1734875128391,
+                "thinkTime": 0.0,
+                "wastedTime": 0.01178121566772461
+            },
+            {
+                "transactionName": "open_itinerary",
+                "rawStartTime": 1734875130392,
+                "rawEndTime": 1734875130606,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009598970413208008
+            },
+            {
+                "transactionName": "uc_04_goto_flights_and_itinerary",
+                "rawStartTime": 1734875123667,
+                "rawEndTime": 1734875132595,
+                "thinkTime": 7.982563,
+                "wastedTime": 0.09503316879272461
+            }
+        ]
+    }
+]

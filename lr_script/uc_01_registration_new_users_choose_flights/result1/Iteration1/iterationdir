@@ -1,0 +1,6 @@
+[vuser_init]
+SnapshotIndex=I1_vuser_init
+[uc_01_registration_new_users_choose_flights]
+SnapshotIndex=I1_uc_01_registration_new_users_choose_flights
+[vuser_end]
+SnapshotIndex=I1_vuser_end

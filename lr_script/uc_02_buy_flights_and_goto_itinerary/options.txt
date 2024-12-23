@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\NT_school\git\loadrunner\lr_script\uc_02_buy_flights_and_goto_itinerary
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\nt_school\git\loadrunner\lr_script\uc_02_buy_flights_and_goto_itinerary\\logfile.log
+c:\nt_school\git\loadrunner\lr_script\uc_02_buy_flights_and_goto_itinerary\\combined_uc_02_buy_flights_and_goto_itinerary.c
+c:\nt_school\git\loadrunner\lr_script\uc_02_buy_flights_and_goto_itinerary\\pre_cci.c
